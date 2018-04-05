@@ -115,21 +115,20 @@ logoTimeline
   offset: 0
 })
   .add({
-  targets: ['#TopB', '#TopA','#OutB'],
-  translateY: [50, 0],
-rotate: '1turn',
-  opacity: { value: [0, 1], duration: 1000, easing: 'linear' },
+  targets: ['#TopB', '#TopA'],
+  translateY: [300, 0],
 
-  delay: function(el, i, t) { return 1000 + ( i * 20 ); },
+  opacity: { value: [0, 1], duration: 1500, easing: 'linear' },
+
+  delay: function(el, i, t) { return 2000 + ( i * 20 ); },
   offset: 0
 })
 .add({
 targets: ['#BackA ', '#BackB'],
 translateY: [100, 0],
-rotate: '3turn',
 
-opacity: { value: [0, 1], duration: 500, easing: 'easeInQuad' },
+opacity: { value: [0, 1], duration: 100, easing: 'easeInQuad' },
 
-delay: function(el, i, t) { return 2000 + ( i * 20 ); },
+delay: function(el, i, t) { return 1000 + ( i * 20 ); },
 offset: 0
 });;
